@@ -120,7 +120,7 @@ class FalhaDePlantioAlgorithm(QgsProcessingAlgorithm):
         # Aritmética de bandas
         # Calculo de indeci
         alg_params = {
-            'ALPHA': True,
+            'ALPHA': False,
             'FORMULA': '(2*b2 - b1 - b3)/(2*b2 + b1 + b3)',
             'INPUT': outputs['RecortarRasterRbg']['OUTPUT'],
             'OPEN': False,
